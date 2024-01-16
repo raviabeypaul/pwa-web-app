@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "yarn build && serve -s build",
+    "serve-build": "yarn build && serve -l 3000 -s build",
     "start-https" : "set HTTPS=true && yarn serve",
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
